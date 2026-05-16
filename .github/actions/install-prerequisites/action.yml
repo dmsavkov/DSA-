@@ -3,17 +3,30 @@ name: "Install Prerequisites"
 runs:
   using: "composite"
   steps:
-
     - name: Установка инструментов
       shell: bash
       run: |
+        set -euo pipefail
         sudo apt-get update
         sudo apt-get install -y \
-        build-essential \
-        libgtest-dev \
-        xutils-dev \
-        cmake \
-        clang clang-tidy
+          build-essential \
+          libgtest-dev \
+          xutils-dev \
+          cmake \
+          clang \
+          clang-tidy \
+          bear \
+          python3
+
+        # libgtest-dev on Ubuntu ships sources; build static libs for linking.
+        if [ ! -f /usr/lib/libgtest.a ] && [ ! -f /usr/lib/x86_64-linux-gnu/libgtest.a ]; then
+          GTEST_SRC=/usr/src/gtest
+          if [ -d "$GTEST_SRC" ]; then
+            sudo cmake -S "$GTEST_SRC" -B /tmp/gtest-build
+            sudo cmake --build /tmp/gtest-build
+            sudo cp /tmp/gtest-build/lib/*.a /usr/lib/
+          fi
+        fi
 
     - name: Установка Python 3.12
       uses: actions/setup-python@v5

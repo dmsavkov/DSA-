@@ -12,6 +12,7 @@ runs:
     - name: Сборка
       shell: bash
       run: |
+        set -euo pipefail
         pushd "${{ inputs.exercise }}"
         make depends
         make release
@@ -22,6 +23,7 @@ runs:
     - name: Модульные тесты
       shell: bash
       run: |
+        set -euo pipefail
         pushd "${{ inputs.exercise }}"
         make run_utest
         popd
@@ -29,6 +31,8 @@ runs:
     - name: Интеграционные тесты
       shell: bash
       run: |
+        set -euo pipefail
         pushd "${{ inputs.exercise }}"
+        chmod +x integration_test.sh
         make run_itest
         popd

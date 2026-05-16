@@ -39,3 +39,17 @@
 
 # debug information files
 *.dwo
+
+.vscode/
+
+# Integration / local test artifacts
+**/.itest/
+**/test.utf8
+**/test.utf8.out
+**/test.utf16
+**/test.utf16.py
+02.UTF-encoder/utfencoder
+02.UTF-encoder/utest
+
+# makedepend backup (Makefile.hdrdep itself is committed, empty)
+*.hdrdep.bak

@@ -2,28 +2,22 @@
 
 ## Состояние
 
-- ![BuildUtestItest](https://github.com/dluciv/cpp-tasks-seed/actions/workflows/make_and_test.yml/badge.svg) — Make и тесты
-- ![StyleCheck](https://github.com/dluciv/cpp-tasks-seed/actions/workflows/lint_style_check.yml/badge.svg) — CLang Tidy и форматирование
+- ![BuildUtestItest](https://github.com/dmsavkov/Encoder-Decoder-UTF/actions/workflows/make_and_test.yml/badge.svg) — Make и тесты
+- ![StyleCheck](https://github.com/dmsavkov/Encoder-Decoder-UTF/actions/workflows/lint_style_check.yml/badge.svg) — CLang Tidy и форматирование
+
+> **GitHub Actions на форке:** если в [Actions](https://github.com/dmsavkov/Encoder-Decoder-UTF/actions) пусто, откройте **Settings → Actions → General** и включите *Allow all actions and reusable workflows*, затем **Run workflow** (кнопка появится после `workflow_dispatch` в YAML) или сделайте push в `main`.
+>
+> **PR в `dluciv/cpp-tasks-seed`:** проверки могут ждать одобрения преподавателя (*action required*) — это нормально для PR из форка.
 
 ## Задания
 
-### [00.DummyMake](00.DummyMake)
+### [02.UTF-encoder](02.UTF-encoder) СЛУЧАЙНО СДЕЛАНО ВМЕСТО Base85
 
-Шаблонное задание с Makefile, модульными и интеграционными тестами.
+Кодирование и декодирование между UTF-8, UTF-16LE и UTF-32LE.
 
-### [01.InplaceSorting](01.InplaceSorting)
-
-Сортировка на месте.
-
-1. Разобраться, что там уже есть, что как и почему.
-2. Реализовать не менее одного алгоритма сортировки за $O(N^2)$ и не менее одного за $O(N log N)$.
-3. Добавить их запуск на массивах разой длины в качестве интеграционного теста.
-4. Добавить юниттесты для них.
-
-### [02.Base85](02.Base85)
-
-1. Реализовать кодер и декодер.
-2. Добавить юниттесты для разной длины разных строк, да попопдлее!
+1. Библиотека `utf_codec` (namespace `utf`).
+2. CLI `utfencoder` с режимами `-8to16`, `-16to8`, `-8to32`, `-32to8`, `-16to32`, `-32to16` (и длинными именами `--utf8-to-utf16` и т.д.).
+3. Юниттесты (Google Test) и интеграционный тест с Python-oracle.
 
 ### ... Добавляйте следующие аналогично...
 
