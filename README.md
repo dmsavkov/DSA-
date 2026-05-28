@@ -2,8 +2,8 @@
 
 ## Состояние
 
-- ![BuildUtestItest](actions/workflows/make_and_test.yml/badge.svg) — Make и тесты
-- ![StyleCheck](actions/workflows/lint_style_check.yml/badge.svg) — CLang Tidy и форматирование
+- ![BuildUtestItest](./actions/workflows/make_and_test.yml/badge.svg) — Make и тесты
+- ![StyleCheck](./actions/workflows/lint_style_check.yml/badge.svg) — CLang Tidy и форматирование
 
 ## Задания
 
