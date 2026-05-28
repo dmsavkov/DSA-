@@ -23,7 +23,7 @@ GaussMatrix load_csv_to_matrix(const char *filename)
     return GaussMatrix(rcsv.size(), rcsv.begin()->size());
 }
 
-void print_matrix_as_csv(std::ostream& out, const GaussMatrix matrix, int prec)
+void print_matrix_as_csv(std::ostream& out, const GaussMatrix &matrix, int prec)
 {
     for (int j = 0; j < matrix.cols(); ++j)
         out << "A,";
