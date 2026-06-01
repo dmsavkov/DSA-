@@ -51,5 +51,8 @@
 02.UTF-encoder/utfencoder
 02.UTF-encoder/utest
 
-# makedepend backup (Makefile.hdrdep itself is committed, empty)
+02.UTF-encoder/Makefile.hdrdep
+03.Gauss/gauss
+03.Gauss/utest
+03.Gauss/Makefile.hdrdep
 *.hdrdep.bak

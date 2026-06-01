@@ -19,7 +19,7 @@ constexpr char USAGE[] =
 
 std::string read_stdin_to_string()
 {
-    constexpr std::streamsize BUF_SIZE = 64 * 1024;
+    constexpr std::streamsize BUF_SIZE = static_cast<std::streamsize>(64) * 1024;
     std::string out;
     out.reserve(1024);
     std::vector<char> buf(BUF_SIZE);
@@ -114,7 +114,7 @@ std::string utf32_to_bytes(std::u32string const &units)
     return out;
 }
 
-enum class Mode
+enum class Mode : std::uint8_t
 {
     Utf8ToUtf16,
     Utf16ToUtf8,

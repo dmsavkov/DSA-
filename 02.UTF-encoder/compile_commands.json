@@ -32,39 +32,5 @@
     "directory": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder",
     "file": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder/utf_codec.cpp",
     "output": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder/utf_codec.d.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/g++",
-      "-c",
-      "-Werror",
-      "-Wpedantic",
-      "-Wall",
-      "-O3",
-      "-DNDEBUG",
-      "-o",
-      "utf_tool.r.o",
-      "utf_tool.cpp"
-    ],
-    "directory": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder",
-    "file": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder/utf_tool.cpp",
-    "output": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder/utf_tool.r.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/g++",
-      "-c",
-      "-Werror",
-      "-Wpedantic",
-      "-Wall",
-      "-O3",
-      "-DNDEBUG",
-      "-o",
-      "utf_codec.r.o",
-      "utf_codec.cpp"
-    ],
-    "directory": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder",
-    "file": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder/utf_codec.cpp",
-    "output": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/02.UTF-encoder/utf_codec.r.o"
   }
 ]

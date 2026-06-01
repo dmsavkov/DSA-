@@ -1,7 +1,16 @@
-CXX_EXTRA_FLAGS=-I ../external/lazycsv/include -I ../external/eigen $(shell pkgconf --cflags openblas)
-LD_EXTRA_OPT=$(pkgconf --libs openblas)
+OPENBLAS_CFLAGS := $(shell pkg-config --cflags openblas 2>/dev/null)
+OPENBLAS_LIBS := $(shell pkg-config --libs openblas 2>/dev/null)
+
+CXX_EXTRA_FLAGS=-I ../external/lazycsv/include -I ../external/eigen $(OPENBLAS_CFLAGS)
+LD_EXTRA_OPT=$(OPENBLAS_LIBS)
 
 include ../Makefile.inc
+
+Makefile.hdrdep:
+	@touch $@
+
+depends: Makefile.hdrdep
+	makedepend -f Makefile.hdrdep *.c*
 
 release : gauss
 
@@ -19,8 +28,16 @@ run_utest : utest
 
 run_itest : release
 	echo "Integration tests..."
-	./integration_test.sh
+	bash ./integration_test.sh
 
 all: depends run_utest run_itest
 
-include Makefile.hdrdep
+clean :
+	-rm -f *.o *.hdrdep.bak
+	-rm -f gauss utest debug
+	-rm -rf .itest
+
+cleanall : clean
+	@echo > Makefile.hdrdep
+
+-include Makefile.hdrdep

@@ -26,7 +26,7 @@ astyle:
 	astyle --options=../astyle.ini *.h *.cpp
 
 tidy:
-	../tidy.sh
+	../tidy.sh "$(CURDIR)"
 
 depends :
 	makedepend -f Makefile.hdrdep *.c*
