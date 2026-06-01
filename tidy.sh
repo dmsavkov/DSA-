@@ -22,9 +22,5 @@ fi
 
 for f in $FILES; do
   echo "Running clang-tidy on $f"
-  if ((${#COMPILE_DB[@]})); then
-    clang-tidy "${COMPILE_DB[@]}" -checks="$CHECKS" "$f" --quiet 2>&1
-  else
-    clang-tidy -checks="$CHECKS" "$f" --quiet -- -std=c++17 2>&1
-  fi
+  clang-tidy -p .  -checks="$CHECKS" "$f" --extra-arg="-isystem${PWD}/../external/eigen" --extra-arg="-isystem${PWD}/../external/lazycsv/include" --quiet 2>&1
 done

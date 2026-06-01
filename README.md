@@ -2,12 +2,8 @@
 
 ## Состояние
 
-- ![BuildUtestItest](https://github.com/dmsavkov/Encoder-Decoder-UTF/actions/workflows/make_and_test.yml/badge.svg) — Make и тесты
-- ![StyleCheck](https://github.com/dmsavkov/Encoder-Decoder-UTF/actions/workflows/lint_style_check.yml/badge.svg) — CLang Tidy и форматирование
-
-> **GitHub Actions на форке:** если в [Actions](https://github.com/dmsavkov/Encoder-Decoder-UTF/actions) пусто, откройте **Settings → Actions → General** и включите *Allow all actions and reusable workflows*, затем **Run workflow** (кнопка появится после `workflow_dispatch` в YAML) или сделайте push в `main`.
->
-> **PR в `dluciv/cpp-tasks-seed`:** проверки могут ждать одобрения преподавателя (*action required*) — это нормально для PR из форка.
+- [![BuildUtestItest](../../actions/workflows/make_and_test.yml/badge.svg)](../../actions/workflows/make_and_test.yml) — Make и тесты
+- [![StyleCheck](../../actions/workflows/lint_style_check.yml/badge.svg)](../../actions/workflows/lint_style_check.yml) — CLang Tidy и форматирование
 
 ## Задания
 
@@ -19,7 +15,19 @@
 2. CLI `utfencoder` с режимами `-8to16`, `-16to8`, `-8to32`, `-32to8`, `-16to32`, `-32to16` (и длинными именами `--utf8-to-utf16` и т.д.).
 3. Юниттесты (Google Test) и интеграционный тест с Python-oracle.
 
-### ... Добавляйте следующие аналогично...
+### [03.Gauss](03.Gauss)
+
+Решение системы методом Гаусса
+
+- Условие читаем из файла `.csv`
+- Пользуясь возможностями Eigen, оперируем строками (имеем в виду, что при должных настройках нам доступна аппаратная векторизация)
+
+При этом:
+
+- Снабжаем решение модульными тестами
+- Большие системы генерируем при помощи [генератора воспроизводимых псевдослучайных чисел](https://stackoverflow.com/a/37945656)
+- Результат также выводим в формате CSV
+- Интеграционные проверяем при помощи `cmp`, как с BASE85
 
 ## Что рекомендуется установить и как пользоваться?
 
