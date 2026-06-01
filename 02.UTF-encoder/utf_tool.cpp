@@ -114,7 +114,7 @@ std::string utf32_to_bytes(std::u32string const &units)
     return out;
 }
 
-enum class Mode
+enum class Mode : std::uint8_t
 {
     Utf8ToUtf16,
     Utf16ToUtf8,

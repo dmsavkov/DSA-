@@ -1,1 +1,32 @@
 
+# DO NOT DELETE
+
+utf_codec.o: utf_codec.h
+utf_codec_test.o: /usr/include/gtest/gtest.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-internal.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-port.h
+utf_codec_test.o: /usr/include/ctype.h /usr/include/features.h
+utf_codec_test.o: /usr/include/features-time64.h /usr/include/stdc-predef.h
+utf_codec_test.o: /usr/include/stdio.h /usr/include/stdlib.h
+utf_codec_test.o: /usr/include/alloca.h /usr/include/string.h
+utf_codec_test.o: /usr/include/strings.h
+utf_codec_test.o: /usr/include/gtest/internal/custom/gtest-port.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-port-arch.h
+utf_codec_test.o: /usr/include/unistd.h /usr/include/regex.h
+utf_codec_test.o: /usr/include/gtest/gtest-message.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-filepath.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-string.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-type-util.h
+utf_codec_test.o: /usr/include/gtest/gtest-death-test.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-death-test-internal.h
+utf_codec_test.o: /usr/include/gtest/gtest-matchers.h
+utf_codec_test.o: /usr/include/gtest/gtest-printers.h
+utf_codec_test.o: /usr/include/gtest/internal/custom/gtest-printers.h
+utf_codec_test.o: /usr/include/gtest/gtest-param-test.h
+utf_codec_test.o: /usr/include/gtest/internal/gtest-param-util.h
+utf_codec_test.o: /usr/include/gtest/gtest-test-part.h
+utf_codec_test.o: /usr/include/gtest/gtest_prod.h
+utf_codec_test.o: /usr/include/gtest/gtest-typed-test.h
+utf_codec_test.o: /usr/include/gtest/gtest_pred_impl.h utf_codec.h
+utf_demo.o: utf_codec.h
+utf_tool.o: utf_codec.h

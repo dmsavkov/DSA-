@@ -22,17 +22,14 @@ jobs:
       fail-fast: false
       matrix:
         task:
-        - 00.DummyMake
-        - 01.InplaceSorting
-        - 02.Base85
-        - 03.Gauss
+          - 02.UTF-encoder
+          - 03.Gauss
 
     steps:
-
-    - name: Получение кода и actions
-      uses: actions/checkout@v4
-      with:
-        submodules: recursive
+      - name: Получение кода и actions
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Инсталляция инструментов
         uses: ./.github/actions/install-prerequisites
@@ -49,8 +46,7 @@ jobs:
       - name: compile_commands.json для clang-tidy
         run: |
           pushd "${{ matrix.task }}"
-          bear -- make utf_codec.d.o utf_codec_test.d.o
-          cp compile_commands.json ..
+          bear -- make utest
           popd
 
       - name: Статический анализ clang-tidy

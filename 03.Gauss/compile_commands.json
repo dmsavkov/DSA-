@@ -1,0 +1,65 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Werror",
+      "-Wpedantic",
+      "-Wall",
+      "-I",
+      "../external/lazycsv/include",
+      "-I",
+      "../external/eigen",
+      "-g",
+      "-DDEBUG",
+      "-o",
+      "Gauss_test.d.o",
+      "Gauss_test.cpp"
+    ],
+    "directory": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss",
+    "file": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss/Gauss_test.cpp",
+    "output": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss/Gauss_test.d.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Werror",
+      "-Wpedantic",
+      "-Wall",
+      "-I",
+      "../external/lazycsv/include",
+      "-I",
+      "../external/eigen",
+      "-g",
+      "-DDEBUG",
+      "-o",
+      "util.d.o",
+      "util.cpp"
+    ],
+    "directory": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss",
+    "file": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss/util.cpp",
+    "output": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss/util.d.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Werror",
+      "-Wpedantic",
+      "-Wall",
+      "-I",
+      "../external/lazycsv/include",
+      "-I",
+      "../external/eigen",
+      "-g",
+      "-DDEBUG",
+      "-o",
+      "Gauss_solve.d.o",
+      "Gauss_solve.cpp"
+    ],
+    "directory": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss",
+    "file": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss/Gauss_solve.cpp",
+    "output": "/mnt/d/Coding/VSCFiles/Personal-Studying/cpp/university/2nd-sem/cpp-tasks-seed/03.Gauss/Gauss_solve.d.o"
+  }
+]
