@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         task:
-          - 02.UTF-encoder
+          - 02.Base85
           - 03.Gauss
 
     steps:
