@@ -2,9 +2,9 @@ name: "Make & Test"
 
 on:
   push:
-    branches: [main]
+    branches: [main, base85]
   pull_request:
-    branches: [main]
+    branches: [main, base85]
   workflow_dispatch:
 
 permissions:
