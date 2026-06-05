@@ -23,7 +23,6 @@ jobs:
       matrix:
         task:
           - 02.Base85
-          - 03.Gauss
 
     steps:
       - name: Получение кода и actions

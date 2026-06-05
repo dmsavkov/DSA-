@@ -4,7 +4,8 @@
 #include <cstdint>
 #include <vector>
 
-namespace base85 {
+namespace base85
+{
 
 std::vector<uint8_t> encode(std::vector<uint8_t> const &bytes);
 
